@@ -37,7 +37,7 @@ public class EditScreenServlet extends HttpServlet {
 			   preparedStatement.setInt(1, id);
 			   ResultSet rs=preparedStatement.executeQuery();
 			   rs.next();
-			   pw.print("<from action='editurl?id="+ id+ "' method='post'>");
+			   pw.print("<form action='editurl?id="+ id+ "' method='post'>");
 			   pw.println("<table  align='center'>");
 			   pw.print("<tr>");
 			   pw.print("<td>Book Name </td>");
